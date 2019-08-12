@@ -1,6 +1,9 @@
 [global_config]
   borderless = True
   extra_styling = False
+  handle_size = 10
+  title_font = Fira Code weight=453 9
+  title_use_system_font = False
 [keybindings]
 [layouts]
   [[default]]
@@ -19,5 +22,6 @@
     cursor_color = "#aaaaaa"
     cursor_shape = underline
     font = Fira Code weight=453 10
+    scrollbar_position = hidden
     show_titlebar = False
     use_system_font = False
