@@ -12,6 +12,8 @@
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
 ZSH_THEME="spaceship"
 source ~/.private.zsh
+test -r "~/.dir_colors" && eval $(dircolors ~/.dir_colors)
+
 # Set list of themes to load
 # Setting this variable when ZSH_THEME=random
 # cause zsh load theme from this variable instead of
