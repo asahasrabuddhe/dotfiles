@@ -1,0 +1,39 @@
+[user]
+	email = ajitem.s@outlook.com
+	name = Ajitem Sahasrabuddhe
+	signingkey = 782DEBC01D3967A5
+[commit]
+	gpgsign = true
+[core]
+	editor = vim
+	whitespace = fix, -indent-with-non-tab, trailing-space, cr-at-eol
+	excludesfile = ~/.gitignore
+[github]
+	user = asahasrabuddhe
+	token = ! lpass show --notes "github home token"
+[color]
+	ui = auto
+[color "branch"]
+	current = yellow bold
+	local = green bold
+	remote = cyan bold
+[color "diff"]
+	meta = yellow bold
+	frag = magenta bold
+	old = red bold
+	new = green bold
+	whitespace = red reverse
+[color "status"]
+	added = green bold
+	changed = yellow bold
+	untracked = red bold
+[diff]
+	tool = vimdiff
+[difftool]
+	prompt = false
+[gitflow "prefix"]
+	feature = feature-
+	release = release-
+	hotfix = hotfix-
+	support = support-
+	versiontag = v
