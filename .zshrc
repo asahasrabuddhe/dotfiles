@@ -10,9 +10,8 @@
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-zsh is loaded.
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
-ZSH_THEME="spaceship"
-source ~/.private.zsh
-test -r "~/.dir_colors" && eval $(dircolors ~/.dir_colors)
+  ZSH_THEME="spaceship"
+  source ~/.private.zsh
 
 # Set list of themes to load
 # Setting this variable when ZSH_THEME=random
@@ -295,3 +294,6 @@ alias curlmum='curl -i -w "@/home/ajitem/curl_format.txt" --header "X-Forwarded-
 alias curlhyd='curl -i -w "@/home/ajitem/curl_format.txt" --header "X-Forwarded-For: 183.82.204.255"'
 alias curllcl='curl -i -w "@/home/ajitem/curl_format.txt"'
 alias config='/usr/bin/git --git-dir=$HOME/.configs/ --work-tree=$HOME'
+
+eval $(dircolors /home/ajitem/.dir_colors)
+zstyle ':completion:*' list-colors "${(@s.:.)LS_COLORS}"
