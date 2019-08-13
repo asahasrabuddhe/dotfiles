@@ -16,12 +16,13 @@
 [plugins]
 [profiles]
   [[default]]
-    background_darkness = 0.8
+    background_darkness = 0.85
     background_type = transparent
     cursor_blink = False
     cursor_color = "#aaaaaa"
     cursor_shape = underline
     font = Fira Code weight=453 10
+    rewrap_on_resize = False
     scrollbar_position = hidden
     show_titlebar = False
     use_system_font = False
