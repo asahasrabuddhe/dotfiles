@@ -1,9 +1,9 @@
 rofi.lines: 5
-rofi.eh: 2
-rofi.width: 100
+rofi.eh: 1
+rofi.width: 25
 rofi.Font: DejaVu Sans Mono 9
 rofi.bw: 0
-rofi.padding: 400
+rofi.padding: 100
 rofi.hide-scrollbar: true
 rofi.color-window: argb:c82d303b, #7c8389, #1d1f21
 rofi.color-normal: argb:3c1d1f21, #c4cbd4, argb:96404552, #4084d6, #f9f9f9
