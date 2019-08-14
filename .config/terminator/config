@@ -1,0 +1,28 @@
+[global_config]
+  borderless = True
+  extra_styling = False
+  handle_size = 10
+  title_font = Fira Code weight=453 9
+  title_use_system_font = False
+[keybindings]
+[layouts]
+  [[default]]
+    [[[child1]]]
+      parent = window0
+      type = Terminal
+    [[[window0]]]
+      parent = ""
+      type = Window
+[plugins]
+[profiles]
+  [[default]]
+    background_darkness = 0.85
+    background_type = transparent
+    cursor_blink = False
+    cursor_color = "#aaaaaa"
+    cursor_shape = underline
+    font = Fira Code weight=453 10
+    rewrap_on_resize = False
+    scrollbar_position = hidden
+    show_titlebar = False
+    use_system_font = False

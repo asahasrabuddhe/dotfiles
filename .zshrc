@@ -10,8 +10,8 @@
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-zsh is loaded.
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
-ZSH_THEME="spaceship"
-CODESTATS_API_KEY="SFMyNTY.WVdwcGRHVnQjI05qa3pOZz09.jPCI4fqoL69XUb12IWzjGjgonA-mMzZGOWf46DTNzqU"
+  ZSH_THEME="spaceship"
+  source ~/.private.zsh
 
 # Set list of themes to load
 # Setting this variable when ZSH_THEME=random
@@ -66,7 +66,7 @@ CODESTATS_API_KEY="SFMyNTY.WVdwcGRHVnQjI05qa3pOZz09.jPCI4fqoL69XUb12IWzjGjgonA-m
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(
-  git, docker, docker-compose, zsh-syntax-highlighting
+  git docker docker-compose zsh-syntax-highlighting zsh-autosuggestions
 )
 
 source $ZSH/oh-my-zsh.sh
@@ -257,7 +257,7 @@ export SDKMAN_DIR="/home/ajitem/.sdkman"
 [[ -s "/home/ajitem/.sdkman/bin/sdkman-init.sh" ]] && source "/home/ajitem/.sdkman/bin/sdkman-init.sh"
 
 export ANDROID_HOME=~/Android/Sdk
-export JAVA_HOME=/usr/lib/jvm/java-12-openjdk
+export JAVA_HOME=/usr/lib/jvm/default
 export PATH=${PATH}:${ANDROID_HOME}/tools
 export PATH=${PATH}:${ANDROID_HOME}/platform-tools
 export PATH=${PATH}:${JAVA_HOME}/bin
@@ -296,3 +296,6 @@ alias curlmum='curl -i -w "@/home/ajitem/curl_format.txt" --header "X-Forwarded-
 alias curlhyd='curl -i -w "@/home/ajitem/curl_format.txt" --header "X-Forwarded-For: 183.82.204.255"'
 alias curllcl='curl -i -w "@/home/ajitem/curl_format.txt"'
 alias config='/usr/bin/git --git-dir=/home/ajitem/.configs/ --work-tree=/home/ajitem'
+
+eval $(dircolors /home/ajitem/.dir_colors)
+zstyle ':completion:*' list-colors "${(@s.:.)LS_COLORS}"
