@@ -1,0 +1,8 @@
+[user]
+	name = Ajitem Sahasrabuddhe
+	email = ajitem.sahasrabuddhe@perennialsys.com
+	signingkey = CF7AE17DEF9358FB21B093785B0EE10DAA76876C
+[commit]
+	gpgsign = true
+[core]
+	autocrlf = input
